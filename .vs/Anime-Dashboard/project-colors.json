@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "decdc383-d7f2-4f92-9bd2-9954aadb5ae0": {
+      "ProjectGuid": "decdc383-d7f2-4f92-9bd2-9954aadb5ae0",
+      "DisplayName": "Anime-Dashboard",
+      "ColorIndex": 0
+    },
+    "414495af-356a-48da-9b9d-e972f2c88c2a": {
+      "ProjectGuid": "414495af-356a-48da-9b9d-e972f2c88c2a",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
