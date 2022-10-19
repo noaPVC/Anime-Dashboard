@@ -10,7 +10,7 @@
         WindowStyle="None"
         AllowsTransparency="True"
         Background="#0C0C0C"
-        Height="800" Width="1400"
+        Height="650" Width="1200"
         WindowStartupLocation="CenterScreen"
         xf:Animations.Primary="{StaticResource FadeIn}">
     <Grid>
@@ -20,7 +20,7 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="380" />
+            <ColumnDefinition Width="290" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         
@@ -36,7 +36,9 @@
         </Border>
         
         <!-- Sidebar -->
-        
+
         <!-- Main center content wireframe setup -->
+        <Grid Grid.Row="1" Grid.Column="1">
+        </Grid>
     </Grid>
 </Window>
