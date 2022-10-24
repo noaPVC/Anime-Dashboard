@@ -7,10 +7,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Themes\Dark.xaml">
+    <Page Update="Resources\Themes\Dark.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Themes\Light.xaml">
+    <Page Update="Resources\Themes\Light.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window\MainWindow.xaml">

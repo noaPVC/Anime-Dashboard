@@ -1,17 +1,16 @@
 ﻿using Anime_Dashboard.Enums;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Anime_Dashboard.Model
 {
-    public class BaseSeries
+    public abstract class BaseSeries
     {
         public string Name { get; set; }
 
         public string CoverImageSource { get; set; }
+
+        public DateTime ReleaseDate { get; set; }
 
         /// <summary>
         /// Length => Amount of seasons. <br></br>
@@ -19,16 +18,22 @@ namespace Anime_Dashboard.Model
         /// </summary>
         public List<int> Seasons { get; set; }
 
-        public int FSK { get; set; }
+        public FSK FSK { get; set; }
+
+        public MediumType MediumType { get; set; }
 
         public decimal Rating { get; set; }
 
-        public BaseSeries(string name, string coverImageSource, List<int> seasons, int fSK, decimal rating)
+        public BaseSeries() { }
+
+        public BaseSeries(string name, string coverImageSource, DateTime dateTime, List<int> seasons, FSK fsk, MediumType mediumType, decimal rating)
         {
             Name = name;
             CoverImageSource = coverImageSource;
+            ReleaseDate = dateTime;
             Seasons = seasons;
-            FSK = fSK;
+            FSK = fsk;
+            MediumType = mediumType;
             Rating = rating;
         }
 
@@ -37,8 +42,10 @@ namespace Anime_Dashboard.Model
             return obj is BaseSeries series &&
                    Name == series.Name &&
                    CoverImageSource == series.CoverImageSource &&
+                   ReleaseDate == series.ReleaseDate &&
                    EqualityComparer<List<int>>.Default.Equals(Seasons, series.Seasons) &&
                    FSK == series.FSK &&
+                   MediumType == series.MediumType &&
                    Rating == series.Rating;
         }
 

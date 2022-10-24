@@ -1,7 +1,6 @@
 ﻿using Anime_Dashboard.Enums;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
 namespace Anime_Dashboard.Model
 {
@@ -19,7 +18,9 @@ namespace Anime_Dashboard.Model
 
         public List<Character> Characters { get; set; }
 
-        public Series(string name, string coverImageSource, List<int> seasons, int fSK, decimal rating, string description, string logoImageSource, string bannerImageSource, List<Genre> genres, List<string> shotsSources, List<Character> characters) : base(name, coverImageSource, seasons, fSK, rating)
+        public Series() { }
+
+        public Series(string name, string coverImageSource, DateTime releaseDate, List<int> seasons, FSK fsk, MediumType mediumType, decimal rating, string description, string logoImageSource, string bannerImageSource, List<Genre> genres, List<string> shotsSources, List<Character> characters) : base(name, coverImageSource, releaseDate, seasons, fsk, mediumType, rating)
         {
             Description = description;
             LogoImageSource = logoImageSource;

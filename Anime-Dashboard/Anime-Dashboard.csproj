@@ -5,40 +5,21 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>Anime_Dashboard</RootNamespace>
     <Nullable>enable</Nullable>
+
+	<ApplicationIcon>Resources\anidash-icon.ico</ApplicationIcon>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="XamlFlair.WPF" Version="1.2.13" />
   </ItemGroup>
+		
+  <ItemGroup>
+    <Content Include="Resources\anidash-icon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Resources\Images\anidash_logo.png" />
-    <Resource Include="Resources\Images\genres\genre_ecchi.png" />
-    <Resource Include="Resources\Images\genres\genre_mystery.png" />
-    <Resource Include="Resources\Images\genres\genre_psycho.png" />
-    <Resource Include="Resources\Images\genres\genre_shounen.png" />
-    <Resource Include="Resources\Images\genres\genre_sliceoflife.png" />
-    <Resource Include="Resources\Images\posters\poster_bleach.png" />
-    <Resource Include="Resources\Images\posters\poster_chainsawmen.png" />
-    <Resource Include="Resources\Images\posters\poster_eminenceinshadow.png" />
-    <Resource Include="Resources\Images\posters\poster_mydressupdarling.png" />
-    <Resource Include="Resources\Images\posters\poster_spyxfamily.png" />
-    <Resource Include="Resources\Images\promos\aot\promo-logo_aot.png" />
-    <Resource Include="Resources\Images\promos\aot\promo-picture_aot.png" />
-    <Resource Include="Resources\Images\promos\death-note\promo-logo_death-note.png" />
-    <Resource Include="Resources\Images\promos\death-note\promo-picture_death-note.png" />
-    <Resource Include="Resources\Images\promos\demon-slayer-mugen-arc\promo-logo_demonslayer.png" />
-    <Resource Include="Resources\Images\promos\demon-slayer-mugen-arc\promo-picture_mugenarc.png" />
-    <Resource Include="Resources\Images\promos\jjk-0\promo-logo_jjk0.png" />
-    <Resource Include="Resources\Images\promos\jjk-0\promo-picture_jjk0.png" />
-    <Resource Include="Resources\Images\promos\jjk-0\promo-picture_jjk0_02_full.png" />
-    <Resource Include="Resources\Images\promos\jjk-0\promo-picture_jjk0_03.png" />
-    <Resource Include="Resources\Images\promos\jjk-0\promo-picture_jjk0_full.png" />
-    <Resource Include="Resources\Images\promos\naruto-shipuden\promo-logo_naruto-shippuden.png" />
-    <Resource Include="Resources\Images\promos\naruto-shipuden\promo-picture_naruto-shippuden.png" />
-    <Resource Include="Resources\Images\promos\opm\promo-logo_opm.png" />
-    <Resource Include="Resources\Images\promos\opm\promo-picture_opm.png" />
   </ItemGroup>
-
 </Project>

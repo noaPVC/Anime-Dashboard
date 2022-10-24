@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:xf="clr-namespace:XamlFlair;assembly=XamlFlair.WPF"
+        xmlns:xf="clr-namespace:XamlFlair;assembly=XamlFlair.WPF" xmlns:viewmodel="clr-namespace:Anime_Dashboard.ViewModel"
         mc:Ignorable="d"
         Title="AniDash" 
         WindowState="Normal"
@@ -13,6 +13,10 @@
         Height="650" Width="1200"
         WindowStartupLocation="CenterScreen"
         xf:Animations.Primary="{StaticResource FadeIn}">
+    <Window.DataContext>
+        <viewmodel:MainViewModel />
+    </Window.DataContext>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30" />
@@ -36,6 +40,7 @@
         </Border>
         
         <!-- Sidebar -->
+        
 
         <!-- Main center content wireframe setup -->
         <Grid Grid.Row="1" Grid.Column="1">
