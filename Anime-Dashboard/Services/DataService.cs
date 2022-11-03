@@ -52,7 +52,7 @@ namespace Anime_Dashboard.Services
                     "not seen a titan in over 100 years. One day, 10 year old Eren and his foster sister Mikasa witness something horrific as the city " +
                     "walls are destroyed by a colossal titan that appears out of thin air. As the smaller titans flood the city, the two kids watch " +
                     "in horror as their mother is eaten alive. Eren vows that he will murder every single titan and take revenge for all of mankind.",
-                    LogoImageSource = null,
+                    LogoImageSource = $"{IMAGES}/logos/attach-on-titan.png",
                     BannerImageSource = $"{IMAGES}/banners/attack-on-titan.png",
                     Genres = new List<Genre> { Genre.Shounen },
                     ShotsSources = new List<string>(),

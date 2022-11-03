@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Resources\Fonts\Fonts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Resources\Themes\Dark.xaml">
       <SubType>Designer</SubType>
     </Page>

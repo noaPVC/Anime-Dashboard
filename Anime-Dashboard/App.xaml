@@ -8,6 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <!-- Themes -->
                 <ResourceDictionary Source="Resources/Themes/Dark.xaml" />
+                <ResourceDictionary Source="Resources/Fonts/Fonts.xaml" />
 
                 <!-- Animations (XamlFlair, custom, material etc.) -->
                 <ResourceDictionary Source="Resources/AnimationsXamlFlair.xaml" />
