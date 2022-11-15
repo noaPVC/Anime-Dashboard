@@ -24,9 +24,11 @@ namespace Anime_Dashboard.Model
 
         public decimal Rating { get; set; }
 
+        public bool Completed { get; set; }
+
         public BaseSeries() { }
 
-        public BaseSeries(string name, string coverImageSource, DateTime dateTime, List<int> seasons, FSK fsk, MediumType mediumType, decimal rating)
+        public BaseSeries(string name, string coverImageSource, DateTime dateTime, List<int> seasons, FSK fsk, MediumType mediumType, decimal rating, bool completed)
         {
             Name = name;
             CoverImageSource = coverImageSource;
@@ -35,6 +37,7 @@ namespace Anime_Dashboard.Model
             FSK = fsk;
             MediumType = mediumType;
             Rating = rating;
+            Completed = completed;
         }
 
         public override bool Equals(object? obj)
@@ -46,7 +49,8 @@ namespace Anime_Dashboard.Model
                    EqualityComparer<List<int>>.Default.Equals(Seasons, series.Seasons) &&
                    FSK == series.FSK &&
                    MediumType == series.MediumType &&
-                   Rating == series.Rating;
+                   Rating == series.Rating &&
+                   Completed == series.Completed;
         }
 
         public override int GetHashCode()

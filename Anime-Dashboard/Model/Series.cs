@@ -20,7 +20,7 @@ namespace Anime_Dashboard.Model
 
         public Series() { }
 
-        public Series(string name, string coverImageSource, DateTime releaseDate, List<int> seasons, FSK fsk, MediumType mediumType, decimal rating, string description, string logoImageSource, string bannerImageSource, List<Genre> genres, List<string> shotsSources, List<Character> characters) : base(name, coverImageSource, releaseDate, seasons, fsk, mediumType, rating)
+        public Series(string name, string coverImageSource, DateTime releaseDate, List<int> seasons, FSK fsk, MediumType mediumType, decimal rating, bool completed, string description, string logoImageSource, string bannerImageSource, List<Genre> genres, List<string> shotsSources, List<Character> characters) : base(name, coverImageSource, releaseDate, seasons, fsk, mediumType, rating, completed)
         {
             Description = description;
             LogoImageSource = logoImageSource;

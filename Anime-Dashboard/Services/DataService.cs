@@ -26,6 +26,7 @@ namespace Anime_Dashboard.Services
                     Seasons = new List<int>() { 37 },
                     FSK = FSK.PEGI_12,
                     Rating = 9.0m,
+                    Completed = true,
                     Description = "Yagami Light is an ace student with great aspects who’s bored out of his mind. " +
                     "One day he finds the Death Note, a notebook held by a shinigami (Death God). " +
                     "With the Death Note in hand, Light decides to create a perfect world. A world without crime or criminals. " +
@@ -45,6 +46,7 @@ namespace Anime_Dashboard.Services
                     Seasons = new List<int>() { 25, 12, 22, 28 },
                     FSK = FSK.PEGI_16,
                     Rating = 9.0m,
+                    Completed = false,
                     Description = "Humans are nearly exterminated by giant creatures called Titans. " +
                     "Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, " +
                     "seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves " +
@@ -64,9 +66,10 @@ namespace Anime_Dashboard.Services
                     CoverImageSource = $"{IMAGES}/posters/bleach-thousand-year-bloodwar.png",
                     MediumType = MediumType.Series,
                     ReleaseDate = new DateTime(2022, 10, 10),
-                    Seasons = new List<int>() { 2 },
+                    Seasons = new List<int>() { 22, 22, 16, 22, 16, 7, 17, 36, 57, 26, 18, 4 },
                     FSK = FSK.PEGI_16,
                     Rating = 9.5m,
+                    Completed = false,
                     Description = "The peace is suddenly broken when warning sirens blare through the Soul Society. " +
                     "Residents, there are disappearing without a trace and nobody knows who's behind it. " +
                     "Meanwhile, a dark shadow is also extending itself toward Ichigo and his friends in Karakura Town.",
