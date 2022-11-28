@@ -2,5 +2,6 @@
 {
     Series,
     Movie,
+    OVA,
     Clip
 }

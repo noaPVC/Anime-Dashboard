@@ -1,7 +1,8 @@
 ﻿using Anime_Dashboard.Enums;
-using Anime_Dashboard.Model;
+using Anime_Dashboard.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Anime_Dashboard.Services
 {
@@ -33,9 +34,9 @@ namespace Anime_Dashboard.Services
                     "However when criminals start dropping dead one by one, the authorities send the legendary detective L to track down the killer.",
                     LogoImageSource = $"{IMAGES}/logos/death-note.png",
                     BannerImageSource = $"{IMAGES}/banners/death-note.png",
-                    Genres = new List<Genre>() { Genre.Mystery, Genre.Psycho },
-                    ShotsSources = new List<string>(),
-                    Characters = new List<Character>()
+                    Genres = new ObservableCollection<Genre>() { Genre.Mystery, Genre.Psycho },
+                    Shots = new ObservableCollection<EpisodeShot>(),
+                    Characters = new ObservableCollection<Character>()
                 },
                 new Series
                 {
@@ -56,9 +57,9 @@ namespace Anime_Dashboard.Services
                     "in horror as their mother is eaten alive. Eren vows that he will murder every single titan and take revenge for all of mankind.",
                     LogoImageSource = $"{IMAGES}/logos/attach-on-titan.png",
                     BannerImageSource = $"{IMAGES}/banners/attack-on-titan.png",
-                    Genres = new List<Genre> { Genre.Shounen },
-                    ShotsSources = new List<string>(),
-                    Characters = new List<Character>()
+                    Genres = new ObservableCollection<Genre> { Genre.Shounen },
+                    Shots = new ObservableCollection<EpisodeShot>(),
+                    Characters = new ObservableCollection<Character>()
                 },
                 new Series
                 {
@@ -75,9 +76,9 @@ namespace Anime_Dashboard.Services
                     "Meanwhile, a dark shadow is also extending itself toward Ichigo and his friends in Karakura Town.",
                     LogoImageSource = $"{IMAGES}/logos/bleach.png",
                     BannerImageSource = $"{IMAGES}/banners/bleach.png",
-                    Genres = new List<Genre>() { Genre.Shounen },
-                    ShotsSources = new List<string>(),
-                    Characters = new List<Character>()
+                    Genres = new ObservableCollection<Genre>() { Genre.Shounen },
+                    Shots = new ObservableCollection<EpisodeShot>(),
+                    Characters = new ObservableCollection<Character>()
                 }
             };
         }

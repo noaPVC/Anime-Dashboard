@@ -11,6 +11,7 @@
         AllowsTransparency="True"
         Background="#0C0C0C"
         Height="650" Width="1200"
+        ResizeMode="CanResize"
         WindowStartupLocation="CenterScreen"
         xf:Animations.Primary="{StaticResource FadeIn}">
     <Window.DataContext>
@@ -44,15 +45,6 @@
 
         <!-- Main center content wireframe setup -->
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <Label FontSize="50" Foreground="White" Content="Poppins Bold" FontFamily="{StaticResource PoppinsBold}" />
-            <Label FontSize="50" Foreground="White" Content="Poppins Regular" FontFamily="{StaticResource PoppinsRegular}" />
-            <Label FontSize="50" Foreground="White" Content="Poppins Thin" FontFamily="{StaticResource PoppinsThin}" />
-            <Label FontSize="50" Foreground="White" Content="Poppins Italic" FontFamily="{StaticResource PoppinsItalic}" />
-
-            <Label FontSize="50" Foreground="White" Content="Lato Bold" FontFamily="{StaticResource LatoBold}" />
-            <Label FontSize="50" Foreground="White" Content="Lato Regular" FontFamily="{StaticResource LatoRegular}" />
-            <Label FontSize="50" Foreground="White" Content="Lato Thin" FontFamily="{StaticResource LatoThin}" />
-            <Label FontSize="50" Foreground="White" Content="Lato Italic" FontFamily="{StaticResource LatoItalic}" />
         </StackPanel>
     </Grid>
 </Window>

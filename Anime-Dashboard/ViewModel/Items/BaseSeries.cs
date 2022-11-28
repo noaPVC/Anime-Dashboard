@@ -1,10 +1,11 @@
-﻿using Anime_Dashboard.Enums;
+﻿using Anime_Dashboard.Core;
+using Anime_Dashboard.Enums;
 using System;
 using System.Collections.Generic;
 
-namespace Anime_Dashboard.Model
+namespace Anime_Dashboard.ViewModel
 {
-    public abstract class BaseSeries
+    public abstract class BaseSeries : ViewModelBase
     {
         public string Name { get; set; }
 
