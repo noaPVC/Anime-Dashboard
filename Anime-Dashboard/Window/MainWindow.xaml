@@ -44,7 +44,8 @@
         
 
         <!-- Main center content wireframe setup -->
-        <StackPanel Grid.Row="1" Grid.Column="1">
+        <StackPanel Grid.Row="1" Grid.Column="1"> 
+            <ListView ItemsSource="{Binding SeriesItems}" />
         </StackPanel>
     </Grid>
 </Window>

@@ -8,10 +8,14 @@ namespace Anime_Dashboard.ViewModel
     public class MainViewModel : ViewModelBase
     {
 
+        public ObservableCollection<Series> SeriesItems { get; set; }
+
         public MainViewModel()
         {
             DataService dataService = new DataService();
             dataService.Build();
+
+            SeriesItems = new ObservableCollection<Series>(dataService.Series);
         }
     }
 }

@@ -7,5 +7,6 @@ public enum FSK
     PEGI_7,
     PEGI_12,
     PEGI_16,
-    PEGI_18
+    Not_Rated,
+    R_Rated,
 }

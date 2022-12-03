@@ -19,14 +19,35 @@ namespace Anime_Dashboard.ViewModel
 
         public string DisplayTitle { get; }
 
-        public EpisodeShot(string shotImageSource, string episodeName, int episode, int season, string displayTitle)
+        public string DisplayedLength { get; set; }
+
+        public EpisodeShot() { }
+
+        public EpisodeShot(string shotImageSource, string episodeName, int episode, int season, int lengthInMinutes)
         {
             Season = season;
             Episode = episode;
             ShotImageSource = shotImageSource;
             EpisodeName = episodeName;
+            DisplayedLength = FormatLength(lengthInMinutes);
 
-            DisplayTitle = $"S{Season}/EP{Episode}: {EpisodeName}";
+            DisplayTitle = $"S{Season}/EP{Episode} - {EpisodeName}";
+        }
+
+        public string FormatLength(int length)
+        {
+            int hours = length / 60;
+            int minutes = length % 60;
+
+            if (length >= 60)
+            {
+                if(minutes != 0)
+                    return $"{hours}h {minutes} min";
+
+                return $"{hours}h";
+            }
+
+            return $"{minutes} min";
         }
 
         public override bool Equals(object? obj)
