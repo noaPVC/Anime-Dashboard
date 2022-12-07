@@ -29,25 +29,9 @@ namespace Anime_Dashboard.ViewModel
             Episode = episode;
             ShotImageSource = shotImageSource;
             EpisodeName = episodeName;
-            DisplayedLength = FormatLength(lengthInMinutes);
+            DisplayedLength = UtilGeneral.FormatLength(lengthInMinutes);
 
             DisplayTitle = $"S{Season}/EP{Episode} - {EpisodeName}";
-        }
-
-        public string FormatLength(int length)
-        {
-            int hours = length / 60;
-            int minutes = length % 60;
-
-            if (length >= 60)
-            {
-                if(minutes != 0)
-                    return $"{hours}h {minutes} min";
-
-                return $"{hours}h";
-            }
-
-            return $"{minutes} min";
         }
 
         public override bool Equals(object? obj)
