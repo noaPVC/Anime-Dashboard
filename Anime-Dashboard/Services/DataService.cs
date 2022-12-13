@@ -9,7 +9,7 @@ namespace Anime_Dashboard.Services
 {
     public class DataService
     {
-        const string IMAGES = "Resources/Images";
+        const string IMAGES = "/Resources/Images";
 
         public List<BaseMedia> Media = new List<BaseMedia>();
         public List<NewSeries> ListOfNewSeries = new List<NewSeries>();
@@ -468,13 +468,43 @@ namespace Anime_Dashboard.Services
                     LogoImageSource = $"{IMAGES}/logos/spyxfamily.png",
                     BannerImageSource = $"{IMAGES}/banners/spyxfamily.png",
                     Genres = new ObservableCollection<Genre>() { Genre.Shounen, Genre.Mystery },
-                    Shots = new ObservableCollection<EpisodeShot>(),
+                    Shots = new ObservableCollection<EpisodeShot>()
+                    {
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/1.png", "Operation Strix", 1, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/2.png", "Secure a Wife", 2, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/3.png", "Prepare for the Interview", 3, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/4.png", "The Prestigious School's Interview", 4, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/5.png", "Will they Pass or Fail?", 5, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/6.png", "The Friendship Scheme", 6, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/7.png", "The Target's Second Son", 7, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/8.png", "The Counter Secret Police Cover Operation", 8, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/9.png", "Show Off How in Love You Are", 9, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/10.png", "The Great Dodgeball Plan", 10, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/11.png", "Stella", 11, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/12.png", "Penguin Park", 12, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/13.png", "Project Apple", 13, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/14.png", "Disarm the Time Bomb", 14, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/15.png", "A New Family Member", 15, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/16.png", "Yor's Kitchen/The Informant's Great Romance Plan", 16, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/17.png", "Carry out the Griffin Plan/Fullmetal Lady/Omelet Rice❤", 17, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/18.png", "Uncle the Private Tutor/Daybreak", 18, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/19.png", "A Revenge Plot Against Desmond/Mama Becomes the Wind", 19, 1, 24),
+                        new EpisodeShot($"{IMAGES}/shots/spyxfamily/20.png", "Investigate the General Hospital/Decipher the Perplexing Code", 20, 1, 24)
+                    },
                     Characters = new ObservableCollection<Character>()
+                    {
+                        new Character("Anya Forger", "Atsumi Tanezaki", $"{IMAGES}/characters/spyxfamily/anya.png"),
+                        new Character("Loid Forger", "Takuya Eguchi", $"{IMAGES}/characters/spyxfamily/loid.png"),
+                        new Character("Yor Forger", "Saori Hayami", $"{IMAGES}/characters/spyxfamily/yor.png"),
+                        new Character("Yuri", "Kensho Ono", $"{IMAGES}/characters/spyxfamily/yuri.png"),
+                        new Character("Damian", "Natsumi Fujiwara", $"{IMAGES}/characters/spyxfamily/damian.png"),
+                        new Character("Franky", "Hiroyuki Yoshino", $"{IMAGES}/characters/spyxfamily/franky.png"),
+                        new Character("Donovan", "Takaya Hashi", $"{IMAGES}/characters/spyxfamily/donovan.png"),
+                        new Character("Henry", "Kazuhiro Yamaji", $"{IMAGES}/characters/spyxfamily/henry.png")
+                    }
                 }
-
                 // eminence in shadow as well as monster is still missing
                 // collect frames for death note, monster, and bleach
-                // [FINISH SPYXFAMILY DATASET]
             };
         }
     }

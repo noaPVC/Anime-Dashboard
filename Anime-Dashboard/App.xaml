@@ -12,6 +12,9 @@
 
                 <!-- Animations (XamlFlair, custom, material etc.) -->
                 <ResourceDictionary Source="Resources/AnimationsXamlFlair.xaml" />
+                
+                <!-- Resource Control Styles -->
+                <ResourceDictionary Source="Controls/Styles/Buttons.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

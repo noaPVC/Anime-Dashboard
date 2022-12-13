@@ -40,6 +40,18 @@
     <None Remove="Resources\Fonts\Poppins\Poppins-SemiBoldItalic.ttf" />
     <None Remove="Resources\Fonts\Poppins\Poppins-Thin.ttf" />
     <None Remove="Resources\Fonts\Poppins\Poppins-ThinItalic.ttf" />
+    <None Remove="Resources\Images\posters\attack-on-titan.png" />
+    <None Remove="Resources\Images\posters\bleach-thousand-year-bloodwar.png" />
+    <None Remove="Resources\Images\posters\chainsaw-man.png" />
+    <None Remove="Resources\Images\posters\death-note.png" />
+    <None Remove="Resources\Images\posters\demon-slayer-mugen-train.png" />
+    <None Remove="Resources\Images\posters\eminence-in-shadow.png" />
+    <None Remove="Resources\Images\posters\jujutsu-kaisen-0.png" />
+    <None Remove="Resources\Images\posters\monster.png" />
+    <None Remove="Resources\Images\posters\my-dressup-darling.png" />
+    <None Remove="Resources\Images\posters\naruto-shippuden.png" />
+    <None Remove="Resources\Images\posters\one-punch-man.png" />
+    <None Remove="Resources\Images\posters\spyxfamily.png" />
   </ItemGroup>
 	
   <ItemGroup>
@@ -133,6 +145,42 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Fonts\Poppins\Poppins-ThinItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\attack-on-titan.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\bleach-thousand-year-bloodwar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\chainsaw-man.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\death-note.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\demon-slayer-mugen-train.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\eminence-in-shadow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\jujutsu-kaisen-0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\monster.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\my-dressup-darling.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\naruto-shippuden.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\one-punch-man.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\posters\spyxfamily.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

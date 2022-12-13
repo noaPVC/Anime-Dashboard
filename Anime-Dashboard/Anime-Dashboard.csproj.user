@@ -7,6 +7,20 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MediaView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SearchView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\Styles\Buttons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Resources\Fonts\Fonts.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -14,6 +28,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\Themes\Light.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MediaView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SearchView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Window\MainWindow.xaml">

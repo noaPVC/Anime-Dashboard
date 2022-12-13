@@ -3,7 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:xf="clr-namespace:XamlFlair;assembly=XamlFlair.WPF" xmlns:viewmodel="clr-namespace:Anime_Dashboard.ViewModel"
+        xmlns:xf="clr-namespace:XamlFlair;assembly=XamlFlair.WPF" 
+        xmlns:viewmodel="clr-namespace:Anime_Dashboard.ViewModel" 
+        xmlns:view="clr-namespace:Anime_Dashboard.View"
         mc:Ignorable="d"
         Title="AniDash" 
         WindowState="Normal"
@@ -14,9 +16,19 @@
         ResizeMode="CanResize"
         WindowStartupLocation="CenterScreen"
         xf:Animations.Primary="{StaticResource FadeIn}">
-    <Window.DataContext>
-        <viewmodel:MainViewModel />
-    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+            <view:HomeView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewmodel:MediaViewModel}">
+            <view:MediaView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewmodel:SearchViewModel}">
+            <view:SearchView />
+        </DataTemplate>
+    </Window.Resources>
     
     <Grid>
         <Grid.RowDefinitions>
@@ -36,7 +48,9 @@
                         HorizontalAlignment="Right"
                         VerticalAlignment="Center">
                 <!-- toolbar controls -->
-                
+                <Button Content="minimize" Style="{StaticResource ToolbarButtonStyle}" />
+                <Button Content="recover" Style="{StaticResource ToolbarButtonStyle}" />
+                <Button Content="close" Style="{StaticResource ToolbarButtonStyle}" />
             </StackPanel>
         </Border>
         
@@ -44,8 +58,7 @@
         
 
         <!-- Main center content wireframe setup -->
-        <StackPanel Grid.Row="1" Grid.Column="1"> 
-            <ListView ItemsSource="{Binding Items}" />
-        </StackPanel>
+        <Grid Grid.Row="1" Grid.Column="1">
+        </Grid>
     </Grid>
 </Window>

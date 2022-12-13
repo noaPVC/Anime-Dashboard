@@ -19,5 +19,10 @@ namespace Anime_Dashboard.Core
 
             return $"{hours}h";
         }
+
+        public static string GetNumberZeroFormat(int episode)
+        {
+            return episode >= 10 ? episode.ToString() : $"0{episode}"; 
+        }
     }
 }

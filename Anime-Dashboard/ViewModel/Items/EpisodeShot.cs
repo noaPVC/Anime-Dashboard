@@ -31,7 +31,7 @@ namespace Anime_Dashboard.ViewModel
             EpisodeName = episodeName;
             DisplayedLength = UtilGeneral.FormatLength(lengthInMinutes);
 
-            DisplayTitle = $"S{Season}/EP{Episode} - {EpisodeName}";
+            DisplayTitle = $"S{Season} EP{UtilGeneral.GetNumberZeroFormat(episode)} - {EpisodeName}";
         }
 
         public override bool Equals(object? obj)
